@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 import '../models/article_model.dart';
 import 'rss_service.dart';
 
 class ApiService {
-  static const String _apiKey = 'ee07625d660145b58dea4262e140f511';
+  static String get _apiKey => dotenv.env['NEWS_API_KEY'] ?? '';
   static const String _baseUrl = 'https://newsapi.org/v2';
 
   // NewsAPI supported languages

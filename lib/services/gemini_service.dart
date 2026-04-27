@@ -1,7 +1,8 @@
 import 'package:google_generative_ai/google_generative_ai.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class GeminiService {
-  static const String _apiKey = 'AIzaSyAV8Kvx-5PCETcrKvVPL-45o5VNJ1PM4Q0';
+  static String get _apiKey => dotenv.env['GEMINI_API_KEY'] ?? '';
   final Map<String, String> _cache = {};
 
   // Clean HTML before sending to Gemini

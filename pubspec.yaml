@@ -17,6 +17,7 @@ dependencies:
   url_launcher: ^6.2.4
   share_plus: ^7.2.2
   google_generative_ai: ^0.4.3
+  flutter_dotenv: ^6.0.1
 
 dev_dependencies:
   flutter_test:
@@ -25,3 +26,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - .env
