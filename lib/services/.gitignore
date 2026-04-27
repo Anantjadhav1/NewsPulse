@@ -1,0 +1,24 @@
+# API Keys - Never push these!
+.env
+lib/services/api_service.dart
+lib/services/gemini_service.dart
+
+# Flutter
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.g.dart
+
+# Android
+android/local.properties
+android/.gradle
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+
+# IDE
+.idea/
+.vscode/
+*.iml
